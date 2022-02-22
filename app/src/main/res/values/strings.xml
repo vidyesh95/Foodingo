@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Foodingo</string>
+    <string name="MenuOrder">Order</string>
+    <string name="MenuGoOut">Go Out</string>
+    <string name="MenuEntertainment">Entertainment</string>
+    <string name="MenuExplore">Explore</string>
+    <string name="MenuSpace">Space</string>
 </resources>
