@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Foodingo">
         <activity
+            android:theme="@style/Theme.Foodingo.NoActionBar"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
