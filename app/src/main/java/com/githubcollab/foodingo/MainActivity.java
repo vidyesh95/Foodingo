@@ -7,11 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.githubcollab.foodingo.menuFragments.EntertainFragment;
-import com.githubcollab.foodingo.menuFragments.ExploreFragment;
-import com.githubcollab.foodingo.menuFragments.GoOutFragment;
-import com.githubcollab.foodingo.menuFragments.OrderFragment;
-import com.githubcollab.foodingo.menuFragments.SpaceFragment;
+import com.githubcollab.foodingo.feature_foodingo.presentation.entertain.EntertainFragment;
+import com.githubcollab.foodingo.feature_foodingo.presentation.explore.ExploreFragment;
+import com.githubcollab.foodingo.feature_foodingo.presentation.goout.GoOutFragment;
+import com.githubcollab.foodingo.feature_foodingo.presentation.order.OrderFragment;
+import com.githubcollab.foodingo.feature_foodingo.presentation.spaces.SpacesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     selectFragment = ExploreFragment.newInstance();
                     break;
                 default:
-                    selectFragment = SpaceFragment.newInstance();
+                    selectFragment = SpacesFragment.newInstance();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, selectFragment).commit();

@@ -7,4 +7,10 @@
     <string name="MenuSpace">Space</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="translate">Translate</string>
+
+    <string name="switch_app_theme">Switch App Theme</string>
+    <string name="profile">Profile</string>
+
+
 </resources>
