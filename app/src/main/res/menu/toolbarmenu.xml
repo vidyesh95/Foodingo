@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<item android:id="@+id/Local"
-    android:title="@string/translate"
-    android:contentDescription="@string/translate"
-    android:icon="@drawable/ic_google_translate_logo"
-    app:showAsAction="ifRoom" />
-    <item android:id="@+id/darkmode"
-        android:title="@string/switch_app_theme"
+    <item
+        android:id="@+id/Local"
+        android:contentDescription="@string/translate"
+        android:icon="@drawable/ic_google_translate_logo"
+        android:title="@string/translate"
+        app:itemIconSize="5dp"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/darkmode"
         android:contentDescription="@string/switch_app_theme"
         android:icon="@drawable/ic_baseline_dark_mode_24"
+        android:title="@string/switch_app_theme"
         app:showAsAction="always" />
-    <item android:id="@+id/profile"
-        android:title="@string/profile"
+
+    <item
+        android:id="@+id/profile"
         android:contentDescription="@string/profile"
         android:icon="@drawable/ic_outline_location_on_24"
+        android:title="@string/profile"
         app:showAsAction="always" />
 </menu>

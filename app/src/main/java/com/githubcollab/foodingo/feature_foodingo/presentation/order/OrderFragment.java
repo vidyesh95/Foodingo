@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.githubcollab.foodingo.R;
+import com.google.android.material.tabs.TabLayout;
 
 public class OrderFragment extends Fragment {
 
@@ -25,14 +26,21 @@ public class OrderFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.order_fragment, container, false);
+        View view = inflater.inflate(R.layout.order_fragment, container, false);
+        TabLayout tabLayout = view.findViewById(R.id.tabLayout);
+        tabLayout.addTab(tabLayout.newTab().setText("food"));
+        tabLayout.addTab(tabLayout.newTab().setText("self pickup"));
+        tabLayout.addTab(tabLayout.newTab().setText("receipes"));
+        tabLayout.addTab(tabLayout.newTab().setText("cafe"));
+        tabLayout.addTab(tabLayout.newTab().setText("drinks"));
+        
+
+        return view;
+
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(OrderViewModel.class);
-        // TODO: Use the ViewModel
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
-
 }
