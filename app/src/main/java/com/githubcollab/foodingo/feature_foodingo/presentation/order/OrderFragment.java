@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.githubcollab.foodingo.databinding.OrderFragmentBinding;
+import com.google.android.material.tabs.TabLayout;
 
 public class OrderFragment extends Fragment {
 
@@ -28,6 +29,13 @@ public class OrderFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         binding = OrderFragmentBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
+        TabLayout tabLayout = binding.tabLayout;
+        tabLayout.addTab(tabLayout.newTab().setText("food"));
+        tabLayout.addTab(tabLayout.newTab().setText("self pickup"));
+        tabLayout.addTab(tabLayout.newTab().setText("market"));
+        tabLayout.addTab(tabLayout.newTab().setText("recipes"));
+        tabLayout.addTab(tabLayout.newTab().setText("cafeteria"));
+        tabLayout.addTab(tabLayout.newTab().setText("restaurant"));
         return view;
     }
 

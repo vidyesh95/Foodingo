@@ -17,4 +17,7 @@
     <string name="user_profile_title">User profile</string>
     <string name="user_profile_content_descript">User profile</string>
     <string name="day_night_content_description">Day/Night</string>
+    <string name="search_location">Search location</string>
+    <string name="address">Borivali, Mumbai, Maharashtra</string>
+    <string name="search_hint">Restaurant, cuisine, market,movie and more.</string>
 </resources>
