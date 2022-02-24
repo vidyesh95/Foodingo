@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +13,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.githubcollab.foodingo.R;
 import com.githubcollab.foodingo.databinding.OrderFragmentBinding;
 import com.githubcollab.foodingo.feature_foodingo.presentation.cafeteria.CafeteriaFragment;
 import com.githubcollab.foodingo.feature_foodingo.presentation.food.FoodFragment;
