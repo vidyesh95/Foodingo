@@ -50,7 +50,7 @@ public class OrderFragment extends Fragment {
         viewPager = binding.orderPager;
         tabLayout = binding.tabLayout;
 
-        pagerCollectionAdapter = new PagerCollectionAdapter(this.getParentFragmentManager(), this.getLifecycle());
+        pagerCollectionAdapter = new PagerCollectionAdapter(this.getChildFragmentManager(), this.getLifecycle());
         pagerCollectionAdapter.addFragment(new FoodFragment(), "food");
         pagerCollectionAdapter.addFragment(new SelfPickUpFragment(), "self pickup");
         pagerCollectionAdapter.addFragment(new MarketFragment(), "market");
