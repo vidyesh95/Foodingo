@@ -52,71 +52,26 @@ public class OrderFragment extends Fragment {
         viewPager = binding.orderPager;
         tabLayout = binding.tabLayout;
 
-        tabLayout.addTab(tabLayout.newTab().setText("food"));
-        tabLayout.addTab(tabLayout.newTab().setText("self pickup"));
-        tabLayout.addTab(tabLayout.newTab().setText("market"));
-        tabLayout.addTab(tabLayout.newTab().setText("recipes"));
-        tabLayout.addTab(tabLayout.newTab().setText("cafeteria"));
-        tabLayout.addTab(tabLayout.newTab().setText("restaurant"));
-
-        fragmentManager = getParentFragmentManager();
-        pagerCollectionAdapter = new PagerCollectionAdapter(fragmentManager, getLifecycle());
-        viewPager.setAdapter(pagerCollectionAdapter);
-
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-            @Override
-            public void onPageSelected(int position) {
-                tabLayout.selectTab(tabLayout.getTabAt(position));
-            }
-        });
-        /*pagerCollectionAdapter = new PagerCollectionAdapter(this.getChildFragmentManager(),this.getLifecycle());
+        pagerCollectionAdapter = new PagerCollectionAdapter(this.getParentFragmentManager(), this.getLifecycle());
         pagerCollectionAdapter.addFragment(new FoodFragment(), "food");
         pagerCollectionAdapter.addFragment(new SelfPickUpFragment(), "self pickup");
         pagerCollectionAdapter.addFragment(new MarketFragment(), "market");
         pagerCollectionAdapter.addFragment(new RecipesFragment(), "recipes");
         pagerCollectionAdapter.addFragment(new CafeteriaFragment(), "cafeteria");
-        pagerCollectionAdapter.addFragment(new RestaurantFragment(), "restaurant");*/
+        pagerCollectionAdapter.addFragment(new RestaurantFragment(), "restaurant");
 
-        //viewPager.setAdapter(pagerCollectionAdapter);
-        //viewPager.setOffscreenPageLimit(1);
-
+        viewPager.setAdapter(pagerCollectionAdapter);
+        viewPager.setOffscreenPageLimit(1);
 
         return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        /*new TabLayoutMediator(tabLayout, viewPager,
+        new TabLayoutMediator(
+                tabLayout, viewPager,
                 (tab, position) -> tab.setText(pagerCollectionAdapter.fragmentTitleList.get(position))
-        ).attach();*/
-
-       /* SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(this,getSupportFragmentManager());
-        viewPager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(viewPager);*/
-
-
-        /*pagerCollectionAdapter = new PagerCollectionAdapter(this);
-        viewPager.setAdapter(pagerCollectionAdapter);
-
-        new TabLayoutMediator(tabLayout, viewPager,
-                (tab, position) -> tab.setText("OBJECT " + (position + 1))
-        ).attach();*/
+        ).attach();
     }
 
     @Override
