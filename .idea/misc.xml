@@ -19,6 +19,10 @@
         <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/drawable/ic_translate24dp.xml" value="0.435" />
         <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/drawable/ic_translate_24dp.xml" value="0.435" />
         <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/drawable/search_background.xml" value="0.435" />
+        <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/drawable/selected_tab.xml" value="0.435" />
+        <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/drawable/tab_rect.xml" value="0.435" />
+        <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/drawable/tab_selector.xml" value="0.435" />
+        <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/drawable/tab_text_selector.xml" value="0.435" />
         <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/layout/activity_main.xml" value="0.3109375" />
         <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/layout/cafeteria_fragment.xml" value="0.3109375" />
         <entry key="..\:/Users/churi/AndroidStudioProjects/Foodingo/app/src/main/res/layout/entertain_fragment.xml" value="0.3109375" />

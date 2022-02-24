@@ -19,8 +19,6 @@ import com.githubcollab.foodingo.databinding.FoodFragmentBinding;
 
 public class FoodFragment extends Fragment {
 
-    public static final String ARG_OBJECT = "object";
-
     private FoodFragmentBinding binding;
 
     private FoodViewModel mViewModel;
@@ -35,12 +33,6 @@ public class FoodFragment extends Fragment {
         binding = FoodFragmentBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
         return view;
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Bundle args = getArguments();
-        binding.text1.setText(Integer.toString(args.getInt(ARG_OBJECT)));
     }
 
     @Override
